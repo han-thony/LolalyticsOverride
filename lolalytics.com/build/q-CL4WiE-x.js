@@ -1,3 +1,4 @@
+// Think Critically
 import {$ as S, r as j, k as I, _ as E, u as A, a as D, E as v, K as p, O as b, f as w, w as B} from "./q-DMhZD469.js";
 import {I as q} from "./q-Cf4lURvK.js";
 import {P as L} from "./q-BsfSN1di.js";
