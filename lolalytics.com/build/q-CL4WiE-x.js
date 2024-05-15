@@ -109,7 +109,7 @@ const R = ()=>{
             t[e[0]] = [t[e[0]][0] - e[1] * e[3], t[e[0]][1] - e[3]]
         }
         ),
-        g = Object.keys(t).map(e=>[e, (t[e][0] / t[e][1]).toFixed(2), (t[e][1] / r * 100).toFixed(2), t[e][1]]).filter(e=>e[3] > 99).sort((e,o)=>o[1] - e[1])
+        g = Object.keys(t).map(e=>[e, (t[e][0] / t[e][1]).toFixed(2), (t[e][1] / r * 100).toFixed(2), t[e][1]]).filter(e=>e[3] > 50).sort((e,o)=>o[1] - e[1])
     }
     return g
 }

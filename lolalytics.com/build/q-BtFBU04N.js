@@ -77,9 +77,9 @@ const z = f=>{
     ;
     if (x === "x")
         v = j("itemSet", l).sort((t,e)=>e[3] - t[3]);
-    else if (x === "a")
+    else if (x === "a") {
         v = b("itemSet", l).sort((t,e)=>e[3] - t[3]);
-    else if (x === "e") {
+	} else if (x === "e") {
         const t = {};
         b("itemSet", l).forEach(e=>{
             t[e[0]] = [e[1] * e[3], e[3]]
@@ -94,8 +94,7 @@ const z = f=>{
         }
         ),
         v = Object.keys(t).map(e=>[e, (t[e][0] / t[e][1]).toFixed(2), (t[e][1] / a * 100).toFixed(2), t[e][1]]).sort((e,o)=>o[3] - e[3])
-	}
-    else {	
+	} else {	
         const t = {};
         b("itemSet", l).forEach(e=>{
             t[e[0]] = [e[1] * e[3], e[3]]
@@ -109,7 +108,7 @@ const z = f=>{
             t[e[0]] = [t[e[0]][0] - e[1] * e[3], t[e[0]][1] - e[3]]
         }
         ),
-        v = Object.keys(t).map(e=>[e, (t[e][0] / t[e][1]).toFixed(2), (t[e][1] / a * 100).toFixed(2), t[e][1]]).filter(e=>e[3] > 99).sort((e,o)=>o[1] - e[1])
+        v = Object.keys(t).map(e=>[e, (t[e][0] / t[e][1]).toFixed(2), (t[e][1] / a * 100).toFixed(2), t[e][1]]).filter(e=>e[3] > 50).sort((e,o)=>o[1] - e[1])
     }
     return v
 }
